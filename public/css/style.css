@@ -1,0 +1,122 @@
+/* Основные стили */
+body {
+  background: linear-gradient(to right, #6a11cb, #8c488f);  
+  color: #fff; 
+  font-family: cursive; 
+}
+
+.container {
+  max-width: 800px; 
+  margin: auto; 
+  padding: 20px; 
+  background-color: rgba(255, 255, 255, 0.8); 
+  border-radius: 8px; 
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3); 
+}
+
+h1, h2 {
+  color: #611349; 
+}
+
+/* Стилизация вкладок */
+.nav-tabs {
+  border-bottom: 2px solid #dee2e6;
+}
+
+.nav-link {
+  border: 1px solid transparent;
+  border-radius: 5px 5px 0 0;
+  padding: 10px;
+  color: #6e084c;
+  transition: background-color 0.3s, color 0.3s; 
+}
+
+.nav-link:hover, .nav-link:focus {
+  background-color: #e9ecef;
+  color: #000000; 
+}
+
+.nav-link.active {
+  color: #495057;
+  background-color: #a70000;
+  border-color: #dee2e6 #dee2e6 #fff;
+}
+
+/* Стилизация форм */
+.form-label {
+  display: block;
+  margin-bottom: .5rem;
+}
+
+.input-group {
+  margin-bottom: 1rem;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+}
+
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 .2rem rgba(0,123,255,.25);
+}
+
+/* Кнопки */
+button {
+  color: #a70045;
+  background-color: #d241e6;
+  border-color: #db74a4;
+  padding: .375rem .75rem;
+  border-radius: .25rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  transition: background-color 0.3s, border-color 0.3s; 
+}
+
+button:hover {
+  color: #fff;
+  background-color: #e47fe7;
+  border-color: #e777de;
+}
+
+/* Стили списка песен */
+.list-group {
+  margin-top: 20px;
+}
+
+.list-group-item {
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s; 
+}
+
+.list-group-item:hover {
+  transform: scale(1.02); 
+}
+
+.list-group-item:last-child {
+  margin-bottom: 0;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+}
